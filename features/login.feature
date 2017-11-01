@@ -1,6 +1,6 @@
-Feature: Example about login function
-
+Feature: Example about login function 
    Test the login function
+
 
    Background: The background
     Given I login the app with username "automationtestervietnam@gmail.com" and pass "chimpdemo123456"
