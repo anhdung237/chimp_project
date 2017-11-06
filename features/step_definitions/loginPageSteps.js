@@ -5,6 +5,7 @@ module.exports = function () {
     
     this.Given(/^I login the app with username "([^"]*)" and pass "([^"]*)"$/, function (username, pass) {
         loginPage.open();
+        loginPage.buttonLogIn.click();
         loginPage.login(username, pass);
     });
     

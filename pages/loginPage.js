@@ -9,6 +9,7 @@ class loginPage extends page {
     get buttonSignIn() { return browser.element("button*=Sign in"); }
 
     login(username, password) {
+        this.textboxEmailAddress.waitForVisible();
         this.textboxEmailAddress.setValue(username);
         this.textboxPassword.setValue(password);
         this.buttonSignIn.click();

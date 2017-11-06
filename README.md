@@ -16,9 +16,9 @@ testing project using chimp framework
 8. When running feature file, cucumber will notify the steps which are missed. We only copy and paste these steps into appropriate step file
 
 ==================== Create the page object ====================
-9. Follow this link http://webdriver.io/guide/testrunner/pageobjects.html to understand how to create page object pattern by WebdriverIO. We will use ES6.
-10. Create main page "page" into pages folder
-11. Create the child pages such as: loginPage.js and mainPage.js
+9. Follow this link http://webdriver.io/guide/testrunner/pageobjects.html to understand how to create page object pattern by WebdriverIO. We will use ES6
+10. Create main page "page" into pages folder. Notice the last command of page.js is "module.exports = page;" instead of "module.exports = new page();" to avoid the error "TypeError: Super expression must either be null or a function, not object"
+11. Create the child pages such as: loginPage.js and mainPage.js. The last command should be "module.exports = new loginPage();"
 12. In the child page, for example: loginPage.js, we will extend page by below:
     12.1. Require page by command var page = require('./page')
         12.1.1. ./ means current folder
@@ -28,4 +28,9 @@ testing project using chimp framework
 
 ==================== Step file call page ====================
 13. The same with section "Create the page object", if the step file want to call any page, we should require the page, by command: var loginPage = require('../pages/loginPage');
-14. Then in the step definition, we can all the instance of page and using its elements, methods.
+14. Then in the step definition, we can all the instance of page and using its elements, methods
+
+==================== Some commands using to run feature file ====================
+15. chimp --webdriverio.waitforTimeout=5000 --watch
+16. chimp config/chimp-config.js --watch -r steps
+17. chimp features/login.feature

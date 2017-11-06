@@ -6,4 +6,4 @@ class page {
 		browser.url("https://posse.com/");
 	};
 }
-module.exports = new page();
+module.exports = page;
