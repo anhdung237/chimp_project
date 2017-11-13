@@ -26,11 +26,16 @@ testing project using chimp framework
     12.2. Declare the extension, e.g. class loginPage extends page {}
     12.3. Then we declare the elements and methods of the specific page
 
-==================== Step file call page ====================
+==================== Step files call page ====================
 13. The same with section "Create the page object", if the step file want to call any page, we should require the page, by command: var loginPage = require('../pages/loginPage');
 14. Then in the step definition, we can all the instance of page and using its elements, methods
 
+==================== Using chimp config file ====================
+15. Download config file from link https://github.com/xolvio/chimp/blob/master/src/bin/default.js , change "import path from 'path';" to "var path = require("path");"
+16. Export the json output of cucumber. We will change in chimp config file, change from "jsonOutput: null" tp "jsonOutput: path.resolve(__dirname, 'output.json'),". It will create a output file output.json in main directory. This file will be used in Jenkins later.
+
+
 ==================== Some commands using to run feature file ====================
-15. chimp --webdriverio.waitforTimeout=5000 --watch
+16. chimp --webdriverio.waitforTimeout=5000 --watch
 16. chimp config/chimp-config.js --watch -r steps
 17. chimp features/login.feature

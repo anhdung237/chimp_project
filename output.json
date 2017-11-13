@@ -1,0 +1,105 @@
+[
+  {
+    "description": "   Test the login function",
+    "elements": [
+      {
+        "id": "example-about-login-function;verify-that-user-can-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify that user can login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I login the app with username \"automationtestervietnam@gmail.com\" and pass \"chimpdemo123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 27621231535
+            },
+            "line": 5,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/loginPageSteps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I see the user icon with name \"AUTOMATION TESTERVIETNAM\"",
+            "result": {
+              "status": "passed",
+              "duration": 2104766353
+            },
+            "line": 8,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the user icon",
+            "result": {
+              "status": "passed",
+              "duration": 104527355
+            },
+            "line": 9,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select the option \"My Profile\"",
+            "result": {
+              "status": "passed",
+              "duration": 117420723
+            },
+            "line": 10,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I see the page \"My Profile\" displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2559351325
+            },
+            "line": 11,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 178045
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\dist\\lib\\cucumberjs\\hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "example-about-login-function",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Example about login function",
+    "tags": [],
+    "uri": "C:/Users/padung/Desktop/chimp_project/features/login.feature"
+  }
+]
