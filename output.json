@@ -13,8 +13,9 @@
             "keyword": "Given ",
             "name": "I login the app with username \"automationtestervietnam@gmail.com\" and pass \"chimpdemo123456\"",
             "result": {
-              "status": "passed",
-              "duration": 27621231535
+              "status": "failed",
+              "duration": 15834488756,
+              "error_message": "Error: Element is not currently visible and may not be manipulated\n    at Object.wait (C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\fibers\\future.js:449:15)\n    at Object.click (C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\wdio-sync\\build\\index.js:344:27)\n    at World.<anonymous> (C:/Users/padung/Desktop/chimp_project/features/step_definitions/loginPageSteps.js:8:31)\n    at C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\meteor-promise\\fiber_pool.js:43:40"
             },
             "line": 5,
             "match": {
@@ -26,8 +27,7 @@
             "keyword": "Then ",
             "name": "I see the user icon with name \"AUTOMATION TESTERVIETNAM\"",
             "result": {
-              "status": "passed",
-              "duration": 2104766353
+              "status": "skipped"
             },
             "line": 8,
             "match": {
@@ -39,8 +39,7 @@
             "keyword": "When ",
             "name": "I click on the user icon",
             "result": {
-              "status": "passed",
-              "duration": 104527355
+              "status": "skipped"
             },
             "line": 9,
             "match": {
@@ -52,8 +51,7 @@
             "keyword": "And ",
             "name": "I select the option \"My Profile\"",
             "result": {
-              "status": "passed",
-              "duration": 117420723
+              "status": "skipped"
             },
             "line": 10,
             "match": {
@@ -63,10 +61,9 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I see the page \"My Profile\" displayed",
+            "name": "I see the page \"My Profile1\" displayed",
             "result": {
-              "status": "passed",
-              "duration": 2559351325
+              "status": "skipped"
             },
             "line": 11,
             "match": {
@@ -78,7 +75,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 178045
+              "duration": 255359
             },
             "hidden": true,
             "match": {
@@ -90,6 +87,83 @@
           {
             "name": "@watch",
             "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "example-about-login-function;verify-that-user-can-login-2",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify that user can login 2",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I login the app with username \"automationtestervietnam@gmail.com\" and pass \"chimpdemo123456\"",
+            "result": {
+              "status": "failed",
+              "duration": 5349934749,
+              "error_message": "Error: Element is not currently visible and may not be manipulated\n    at Object.wait (C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\fibers\\future.js:449:15)\n    at Object.click (C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\wdio-sync\\build\\index.js:344:27)\n    at World.<anonymous> (C:/Users/padung/Desktop/chimp_project/features/step_definitions/loginPageSteps.js:8:31)\n    at C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\node_modules\\meteor-promise\\fiber_pool.js:43:40"
+            },
+            "line": 5,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/loginPageSteps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I see the user icon with name \"AUTOMATION TESTERVIETNAM\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the user icon",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select the option \"My Profile123456\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "match": {
+              "location": "C:/Users/padung/Desktop/chimp_project/features/step_definitions/mainPageSteps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 114206
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\padung\\AppData\\Roaming\\npm\\node_modules\\chimp\\dist\\lib\\cucumberjs\\hooks.js:68"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@watch",
+            "line": 13
           }
         ],
         "type": "scenario"

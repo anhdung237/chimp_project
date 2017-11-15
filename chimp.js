@@ -27,7 +27,7 @@ module.exports = {
   singleSnippetPerFile: true,
   recommendedFilenameSeparator: '_',
   chai: false,
-//   screenshotsOnError: isCI(),
+  screenshotsOnError: true,
   screenshotsPath: '.screenshots',
   captureAllStepScreenshots: false,
   saveScreenshotsToDisk: true,

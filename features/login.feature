@@ -8,4 +8,10 @@ Feature: Example about login function
     Then I see the user icon with name "AUTOMATION TESTERVIETNAM"
     When I click on the user icon
     And I select the option "My Profile"
-    Then I see the page "My Profile" displayed
+    Then I see the page "My Profile1" displayed
+
+@watch
+   Scenario: Verify that user can login 2
+    Then I see the user icon with name "AUTOMATION TESTERVIETNAM"
+    When I click on the user icon
+    And I select the option "My Profile123456"
