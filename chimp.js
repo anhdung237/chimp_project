@@ -27,15 +27,15 @@ module.exports = {
   singleSnippetPerFile: true,
   recommendedFilenameSeparator: '_',
   chai: false,
-  screenshotsOnError: true,
+  screenshotsOnError: false,
   screenshotsPath: '.screenshots',
-  captureAllStepScreenshots: true,
+  captureAllStepScreenshots: false,
   saveScreenshotsToDisk: true,
   // Note: With a large viewport size and captureAllStepScreenshots enabled,
   // you may run out of memory. Use browser.setViewportSize to make the
   // viewport size smaller.
   saveScreenshotsToReport: false,
-  jsonOutput: path.resolve(__dirname, 'output.json'),
+  jsonOutput: path.resolve(__dirname, 'report/output.json'),
   compiler: 'js:' + path.resolve(__dirname, '../../AppData/Roaming/npm/node_modules/chimp/dist/lib/babel-register.js'),
   conditionOutput: true,
 
