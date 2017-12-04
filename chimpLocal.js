@@ -60,7 +60,7 @@ module.exports = {
     baseUrl: null,
     coloredLogs: true,
     screenshotPath: null,
-    waitforTimeout: 5000,
+    waitforTimeout: 10000,
     waitforInterval: 250,
   },
 
