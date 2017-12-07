@@ -40,7 +40,7 @@ module.exports = {
   conditionOutput: true,
 
   // - - - - SELENIUM  - - - -
-  browser: null,
+  browser: 'MicrosoftEdge',
   platform: 'ANY',
   name: '',
   user: '',
@@ -68,7 +68,7 @@ module.exports = {
   seleniumStandaloneOptions: {
     // check for more recent versions of selenium here:
     // http://selenium-release.storage.googleapis.com/index.html
-    version: '3.5.3',
+    version: '3.8.1',
     baseURL: 'https://selenium-release.storage.googleapis.com',
     drivers: {
       chrome: {
@@ -91,6 +91,10 @@ module.exports = {
         version: '0.19.0',
         arch: process.arch,
         baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
+      },
+      edge: {
+        version: '15063',
+        baseURL: 'https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads'
       }
     }
   },
