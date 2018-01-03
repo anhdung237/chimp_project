@@ -41,6 +41,9 @@ module.exports = {
 
   // - - - - SELENIUM  - - - -
   browser: 'MicrosoftEdge',
+  // browser: 'chrome',
+  // browser: 'firefox',
+  // browser: 'internet explorer',
   platform: 'ANY',
   name: '',
   user: '',
@@ -93,7 +96,8 @@ module.exports = {
         baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
       },
       edge: {
-        version: '15063',
+        version: '10586',
+        arch: process.arch,
         baseURL: 'https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads'
       }
     }
